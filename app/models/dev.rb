@@ -8,4 +8,8 @@ def received_one?(item_name)
     end
 end
 
+def give_away(freebie, dev)
+    freebie.update(dev: dev) unless freebie.dev != self
+  end
+  
 end
